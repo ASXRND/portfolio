@@ -42,10 +42,14 @@ a.nav-item:hover {
 	color: #fff;
 }
 
-.avatar{
-	height:200px;
-	border-radius: 50%;
+.avatar {
+    position: relative; /* Позволяет смещать элемент относительно его нормального положения */
+    top: -20px; /* Смещение вверх */
+    left: -20px; /* Смещение влево */
+    height: 200px; /* Размер аватара */
+    border-radius: 50%; /* Скругленные края */
 }
+
 
 .intro-description{
 	padding-top: 1rem;
