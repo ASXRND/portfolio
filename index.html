@@ -1,145 +1,205 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru">
 <head>
-    <title>Portfolio</title>
-    <!-- css files -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-    <meta name="author" content="Hassan Ali">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title>Portfolio</title>
+
+    <!-- Stylesheets -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">-->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="nav container void-background">
-        <!-- This "nav-menu" is hidden on mobile -->
-        <!-- Add the modifier "is-active" to display it on mobile -->
-        <div class="nav-left">
-            <a href="http://medium.com/@hassanhelfi/" class="nav-item">
-                <span class="icon">
-                    <i class="fa fa-medium"></i>
-                </span>
-            </a>
-            <a href="http://github.com/helfi92" class="nav-item">
-                <span class="icon">
-                    <i class="fa fa-github"></i>
-                </span>
-            </a>
-            <a href="https://twitter.com/hassanhelfi" class="nav-item">
-                <span class="icon">
-                    <i class="fa fa-twitter"></i>
-                </span>
-            </a>
-        </div>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Portfolio</a>
+                </div>
+                <div class="menu">
+                    <a href="#home">Вы на главной</a>
+                    <!-- <a href="#projects">Projects</a> -->
+                    <!-- <a href="#contact">Contact</a> -->
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <div class="nav-right nav-menu">
-            <a class="nav-item" href="#about">About</a>
-            <a class="nav-item" href="#projects">Projects</a>
-            <a class="nav-item" href="#social">Social</a>
-        </div>
-
-        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-        <span class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-    </nav>
-
-    <!-- About Me -->
-    <section id="about" class="section section-1">
-        <div class="container has-text-centered">
-            <!-- Source: https://flic.kr/p/pAZBNK -->
-            <img class="avatar" src="assets/img/profile.png">
-        </div>
-        <div class="container"></br>
-            <p class="intro">
-                Lorem Khaled Ipsum is a major key to success. To succeed you must believe. When you believe, you will
-                succeed. Mogul talk. Find peace, life is like a water fall, you’ve gotta flow. Lion! Fan luv. Eliptical
-                talk.
-            </p>
+    <!-- Parallax Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Добро пожаловать на мою страницу! Здесь я детально рассказываю о своем профессиональном опыте, чтобы вы могли найти ответы на большинство вопросов и лучше представить, как мы можем быть полезны друг другу. </h1>
+            <p>Discover my work and skills</p>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section section-2">
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- About Section -->
+    <!-- <section id="about" class="section">
         <div class="container">
-            <div class="has-text-centered">
-                <h3 class="title is-3">Projects</h3>
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        </div>
+    </section> -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+  <!-- About Section -->
+    <section id="about" class="section">
+
+            <!-- Информация над плеерами -->
+            <div class="info">
+                <h3>Мои видеоматериалы</h3>
+                <p>Посмотрите мои лучшие видео, которые я подготовил для вас, чтобы поделиться своим профессиональным опытом и навыками.</p>
             </div>
 
-            <div class="columns is-multiline is-desktop">
-                <!-- Project 1 -->
-                <div class="column">
-                    <div class="box project-text">
-                        <article>
-                            <div>
-                                <figure class="image project-figure">
-                                    <img src="assets/img/project-1.jpg" alt="Image">
-                                </figure>
-                            </div>
-                            <div>
-                                <p>
-                                    They don’t want us to eat. I told you all this before, when you have a swimming
-                                    pool, do not use chlorine, use salt water, the healing, salt water is the healing.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+            <!-- Плееры -->
+            <div class="players">
+                <div class="player">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 1</p>
                 </div>
-                <!-- Project 2 -->
-                <div class="column">
-                    <div class="box project-text">
-                        <article>
-                            <div>
-                                <figure class="image project-figure">
-                                    <img src="assets/img/project-2.jpg" alt="Image">
-                                </figure>
-                            </div>
-                            <div>
-                                <p>
-                                    Bless up. Another one. How’s business? Boomin. Don’t ever play yourself. Life is
-                                    what you make it, so let’s make it.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+                <div class="player">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/abc123XYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 2</p>
+                </div>
+                <div class="player">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/xyz987ABC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 3</p>
+                </div>
+                <div class="player">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/abc123XYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 4</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Social -->
-    <section id="social" class="section section-3">
+
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+    <!-- Apps Section -->
+    <section id="apps" class="section">
+        <!-- Информация над плеерами -->
+            <div class="info_apps">
+                <h3>Приложения которые я использую для работы</h3>
+                <p>Каждое из приложений, которыми я пользуюсь, имеет свою уникальную особенность, которая делает его незаменимым инструментом в моей работе. Будь то для аналитики, автоматизации задач или для создания контента — все они идеально дополняют друг друга и делают процесс работы более эффективным и увлекательным.</p>
+            </div>
+
+
+            <div class="apps">
+                <div class="app">
+                    <p>Google Chrome</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Google Chrome">
+                </div>
+                <div class="app">
+                    <p>Python</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Python">
+                </div>
+                <div class="app">
+                    <p>GitHub</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="GitHub">
+                </div>
+                <div class="app">
+                    <p>VS Code</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="VS Code">
+                </div>
+                <div class="app">
+                    <p>Google Sheets</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Google Sheets">
+                </div>
+                <div class="app">
+                    <p>React</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                </div>
+                <div class="app">
+                    <p>TensorFlow</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="TensorFlow">
+                </div>
+                <div class="app">
+                    <p>Undetected ChromeDriver</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Undetected ChromeDriver">
+                </div>
+                <div class="app">
+                    <p>Pandas</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Pandas">
+                </div>
+                <div class="app">
+                    <p>NumPy</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="NumPy">
+                </div>
+                <div class="app">
+                    <p>Bootstrap</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"" alt="Bootstrap">
+                </div>
+                <!-- <div class="app">
+                    <p>Photoshop</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Photoshop">
+                </div>
+                <div class="app">
+                    <p>Node.js</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Node.js">
+                </div>
+                <div class="app">
+                    <p>Figma</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Figma">
+                </div>
+                <div class="app">
+                    <p>Illustrator</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Illustrator">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <div class="has-text-centered">
-                <h3 class="title is-3">Let's Socialize</h3>
-            </div>
-            <div class="social-container columns">
-                <div class="column is-6 has-text-centered">
-                    <a target="_blank" href="https://ca.linkedin.com/in/hassan-ali-6132468a"><img class=""
-                            src="assets/img/linkedin.png"></a>
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="assets/img/project-1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project.</p>
                 </div>
-                <div class="column is-6 has-text-centered">
-                    <a target="_blank" href="https://www.facebook.com/Hassan.Helfi"><img class=""
-                            src="assets/img/facebook.png"></a>
+                <div class="project-item">
+                    <img src="assets/img/project-2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email or social media.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <section class="section-4 has-text-centered container">
-        <a href="http://www.hassanali.me/about">Hassan Ali</a>
-    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <!-- Scripts  -->
-    <script src="controller.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/scripts.js"></script>
 </body>
-
 </html>
