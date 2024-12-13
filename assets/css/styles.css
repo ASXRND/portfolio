@@ -79,14 +79,14 @@ p {
 /* --------------------------------------------------- */
 /* Стили для About Section */
 #about {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background-color: #1e1e1e;
     color: #ffffff;
 }
 /* Стили для блока информации */
 .info {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .info h3 {
@@ -129,7 +129,7 @@ p {
 /* --------------------------------------------------- */
 /* Стили для секции Apps */
 #apps {
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     background-color: #1e1e1e;
     color: #ffffff;
 }
@@ -141,7 +141,7 @@ p {
 /* Стили для блока информации */
 .info_apps {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
