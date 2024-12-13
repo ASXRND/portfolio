@@ -130,8 +130,8 @@ p {
     grid-template-columns: repeat(4, 1fr); /* 4 колонки */
     gap: 2rem;
     margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .player {
@@ -187,8 +187,8 @@ p {
     flex-wrap: wrap;  /* Разрешает перенос иконок на следующую строку */
     justify-content: space-around;
     gap: 0.1rem;  /* Уменьшаем отступ между иконками (например, до 1rem) */
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 /* Стили для каждого приложения */
@@ -198,20 +198,25 @@ p {
     justify-content: center; /* Центрируем содержимое по вертикали */
     align-items: center; /* Центрируем содержимое по горизонтали */
     background-color: #333;
-    padding: 0.7rem;
+    padding: 0.3rem 0.3rem;  /* Отступы сверху/снизу меньше, а по бокам остаются такие же */
     border-radius: 8px;
-    width: 130px;  /* Ширина блока с иконкой */
+    width: 120px;  /* Ширина блока с иконкой */
 }
 
 .app p {
     font-size: 0.9rem;
     color: #ffffff;
-    margin-bottom: 1rem;  /* Отступ между текстом и иконкой */
+    margin-bottom: 0.5rem;  /* Отступ между текстом и иконкой */
 }
 
 .app img {
-    width: 50px;  /* Ширина иконки */
-    height: 50px;  /* Высота иконки */
+    width: 110px;  /* Ширина иконки */
+    height: 110px;  /* Высота иконки */
+}
+
+.app:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* --------------------------------------------------- */
