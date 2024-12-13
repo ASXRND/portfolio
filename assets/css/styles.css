@@ -26,23 +26,6 @@ p {
     margin: 0 0 1.5rem;
 }
 
-/* _________________________________________________ */
-
-/* Navbar Styles */
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-} */
-
-/* _________________________________________________ */
-
 /* Центрирование содержимого навигации */
 .navbar {
     display: flex;
@@ -71,42 +54,35 @@ p {
 }
 
 /* _________________________________________________ */
-
-
-
 .navbar .logo a {
     /* портфолио размер шрифта */
-    font-size: 18px;
+    font-size: 1rem;
     color: #00d1b2;
     text-decoration: none;
     text-align: center; /* Выравнивание текста влево */
     margin-left: 0; /* Убедитесь, что нет лишнего отступа */
     padding-left: 1rem; /* Настраиваем отступ, если необходимо */
 }
-
-
-
 .navbar .menu a {
     margin: 0 1rem;
     color: #ffffff;
     text-decoration: none;
     /* вы на главной размер шрифта */
-    font-size: 13px;
+    font-size: 1rem;
+    /* Плавный переход для цвета и трансформации */
+    transition: color 0.3s ease, transform 0.1s ease; 
 }
 
 .navbar .menu a:hover {
     color: #00d1b2;
 }
-
 /* --------------------------------------------------- */
-
 /* Стили для About Section */
 #about {
     padding: 4rem 0;
     background-color: #1e1e1e;
     color: #ffffff;
 }
-
 /* Стили для блока информации */
 .info {
     text-align: center;
