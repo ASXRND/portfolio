@@ -1,100 +1,174 @@
-<!DOCTYPE html>  
-<html lang="ru">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="author" content="Your Name">  
-    <title>Portfolio</title>  
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title>Portfolio</title>
 
-    <!-- Stylesheets -->  
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap&subset=cyrillic" rel="stylesheet">  
-    <link rel="stylesheet" href="assets/css/styles.css">  
+    <!-- Stylesheets -->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap&subset=cyrillic" rel="stylesheet">
 
-    <!-- Favicon -->  
-    <link rel="icon" href="assets/img/favicon.png" type="image/png">  
-</head>  
-<body>  
-    <!-- Header with Navbar -->  
-    <header>  
-        <nav class="navbar">  
-            <div class="container">  
-                <div class="logo">  
-                    <a href="#">Portfolio</a>  
-                </div>  
-                <div class="menu">  
-                    <a href="#home">Вы на главной</a>  
-                    <a href="#about">О себе</a>  
-                    <a href="#projects">Проекты</a>  
-                    <a href="#contact">Контакты</a>  
-                </div>  
-                <div class="hamburger" onclick="toggleMenu()">  
-                    <span></span>  
-                    <span></span>  
-                    <span></span>  
-                </div>  
-            </div>  
-        </nav>  
-    </header>  
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Parallax Hero Section -->  
-    <section class="hero" id="home">  
-        <div class="hero-content">  
-            <h1>Добро пожаловать на мою страницу!</h1>  
-            <p>Discover my work and skills</p>  
-        </div>  
-    </section>  
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Portfolio</a>
+                </div>
+                <div class="menu">
+                    <a href="#home">Вы на главной</a>
+                    <!-- <a href="#projects">Projects</a> -->
+                    <!-- <a href="#contact">Contact</a> -->
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <!-- About Section -->  
-    <section id="about" class="section">  
-        <div class="container">  
-            <div class="info">  
-                <h3>Мои видеоматериалы</h3>  
-                <p>Посмотрите мои лучшие видео, которые я подготовил для вас, чтобы поделиться своим профессиональным опытом и навыками.</p>  
-            </div>  
-            <div class="players">  
-                <div class="player">  
-                    <iframe src="assets/img/video/ogolovok_vid_obl.mp4" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                    <p>Video 1</p>  
-                </div>  
-                <div class="player">  
-                    <iframe src="https://www.youtube.com/embed/abc123XYZ" title="Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                    <p>Video 2</p>  
-                </div>  
-                <div class="player">  
-                    <iframe src="https://www.youtube.com/embed/xyz987ABC" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                    <p>Video 3</p>  
-                </div>  
-                <div class="player">  
-                    <iframe src="https://www.youtube.com/embed/abc123XYZ" title="Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                    <p>Video 4</p>  
-                </div>  
-            </div>  
-        </div>  
-    </section>  
+    <!-- Parallax Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Добро пожаловать на мою страницу! Здесь я детально рассказываю о своем профессиональном опыте, чтобы вы могли найти ответы на большинство вопросов и лучше представить, как мы можем быть полезны друг другу. </h1>
+            <p>Discover my work and skills</p>
+        </div>
+    </section>
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+  <!-- About Section -->
+    <section id="about" class="section">
 
-    <!-- Apps Section -->  
-    <section id="apps" class="section">  
-        <div class="container">  
-            <div class="info_apps">  
-                <h3>Приложения, которые я использую.</h3>  
-                <p>Каждое из приложений имеет свою уникальную особенность, которая делает его незаменимым инструментом в моей работе.</p>  
-            </div>  
-            <div class="apps">  
-                <div class="app">  
-                    <p>Photoshop</p>  
-                    <img src="assets/img/icon/photoshop-icon.svg" alt="Photoshop">  
-                </div>  
-                <div class="app">  
-                    <p>Premiere Pro</p>  
-                    <img src="assets/img/icon/premiere-icon.svg" alt="Premiere Pro">  
-                </div>  
-                <div class="app">  
-                    <p>After Effects</p>  
-                    <img src="assets/img/icon/after_effects-icon.svg" alt="After Effects">  
-                </div>  
-                <div class="app">  
-                    <p>Illustrator</p>  
-                    <img src="assets/img/icon/Illustrator-icon.svg" alt="Illustrator">  
-                </div>  
-                <div class="app">  
+            <!-- Информация над плеерами -->
+            <div class="info">
+                <h3>Мои видеоматериалы</h3>
+                <p>Посмотрите мои лучшие видео, которые я подготовил для вас, чтобы поделиться своим профессиональным опытом и навыками.</p>
+            </div>
+
+            <!-- Плееры -->
+            <div class="players">
+                <div class="player">
+                    <iframe width="100%" height="440" src="assets/img/video/ogolovok_vid_obl.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 1</p>
+                </div>
+                <div class="player">
+                    <iframe width="100%" height="440" src="https://www.youtube.com/embed/abc123XYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 2</p>
+                </div>
+                <div class="player">
+                    <iframe width="100%" height="440" src="https://www.youtube.com/embed/xyz987ABC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 3</p>
+                </div>
+                <div class="player">
+                    <iframe width="100%" height="440" src="https://www.youtube.com/embed/abc123XYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Video 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+    <!-- Apps Section -->
+    <section id="apps" class="section">
+        <!-- Информация над плеерами -->
+            <div class="info_apps">
+                <h3>Приложения которые я использую для выполнения разного рода задач.</h3>
+                <p>Каждое из приложений, которыми я пользуюсь, имеет свою уникальную особенность, которая делает его незаменимым инструментом в моей работе. Будь аналитика, автоматизации задач или для создания контента все они идеально дополняют друг друга и делают процесс работы более эффективным и увлекательным. И конечно же это не все.</p>
+            </div>
+
+
+            <div class="apps">
+                <div class="app">
+                    <p>Photoshop</p>
+                    <img src="assets/img/icon/photoshop-icon.svg" alt="Photoshop">
+                </div>
+                <div class="app">
+                    <p>Premiere pro</p>
+                    <img src="assets/img/icon/premiere-icon.svg" alt="Python">
+                </div>
+                <div class="app">
+                    <p>After Effects</p>
+                    <img src="assets/img/icon/after_effects-icon.svg" alt="GitHub">
+                </div>
+                <div class="app">
+                    <p>Illustrator</p>
+                    <img src="assets/img/icon/Illustrator-icon.svg" alt="VS Code">
+                </div>
+                <div class="app">
                     <p>Lightroom</p>
+                    <img src="assets/img/icon/lightroom-icon.svg" alt="Google Sheets">
+                </div>
+                <div class="app">
+                    <p>Figma</p>
+                    <img src="assets/img/icon/figma-icon.svg" alt="React">
+                </div>
+                <div class="app">
+                    <p>Google sheets</p>
+                    <img src="assets/img/icon/google_sheets-icon.svg" alt="TensorFlow">
+                </div>
+                <div class="app">
+                    <p>ChatGPT</p>
+                    <img src="assets/img/icon/сhatGPT-icon.svg" alt="ChatGPT">
+                </div>
+                <div class="app">
+                    <p>Microsoft Excel</p>
+                    <img src="assets/img/icon/microsoft_excel-icon.svg" alt="Microsoft Excel">
+                </div>
+                <div class="app">
+                    <p>Microsoft Word</p>
+                    <img src="assets/img/icon/microsoft_word-icon.svg" alt="Microsoft Word">
+                </div>
+                <div class="app">
+                    <p>Visual Code</p>
+                    <img src="assets/img/icon/visual_studio_code.svg" alt="Visual Code">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="assets/img/project-1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <div class="project-item">
+                    <img src="assets/img/project-2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email or social media.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
