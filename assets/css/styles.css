@@ -234,7 +234,7 @@ p {
 .hero {
     position: relative;
     height: 90vh;
-    background: url('assets/img/bg.svg') no-repeat center center/cover;
+    background: url("assets/img/bg.svg") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
