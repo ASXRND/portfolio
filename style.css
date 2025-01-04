@@ -200,7 +200,7 @@ body {
 }
 
 .underline-white-contact {
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 3px solid #E02E24;
     border-radius: 2px;
     width: 13.4rem;
     margin: auto;
@@ -334,7 +334,7 @@ body {
 }
 
 /* блок с описанием на темном фоне флип фото */
-.flip-item-desc {
+/* .flip-item-desc {
     background: rgba(0, 0, 0, 0.2);
     width: 90%;
     height: 90%;
@@ -344,7 +344,7 @@ body {
     left: 0;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.9);
     overflow: hidden; 
- }
+ } */
 
 .flip-item-title {
     font-size: 1.5em;
